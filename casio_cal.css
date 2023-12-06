@@ -12,8 +12,21 @@
 
 .left-buttons {
     border-radius: 42% 81% 10% 56% / 12% 62% 58% 53%;
+    padding: 0.85rem
 }
 
 .right-buttons {
-    border-radius: 97% 6% 68% 0% / 55% 75% 58% 41% 
+    border-radius: 97% 6% 68% 0% / 55% 75% 58% 41%;
+    padding: 0.85rem
 }
+
+.calculator__button_nav_wrapper {
+    background-color: red;
+}
+
+.calculator__buttons_top-inner span {
+
+    flex: 1!important;
+    align-items: center;
+}
+
