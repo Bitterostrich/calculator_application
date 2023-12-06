@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.calculator__shape {
+    perspective: 1000px;
+}
+
+.calculator__body {
+    height: 32rem;
+}
+
+.left-buttons {
+    border-radius: 42% 81% 10% 56% / 12% 62% 58% 53%;
+}
+
+.right-buttons {
+    border-radius: 97% 6% 68% 0% / 55% 75% 58% 41% 
+}
