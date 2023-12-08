@@ -11,9 +11,6 @@ class Calculator {
     appendNumber(number) {
         if (number === '.' && this.currentValue.includes('.'))return
         this.currentValue = this.currentValue.toString()  + number.toString()
-
-   
-
     }
 
     compute(screenOutput) {
@@ -122,6 +119,12 @@ class Calculator {
             }
             
         }
+
+        turnOff() {
+            if (this.currentValue !== '' && this.previousValue !== ''){
+
+            }
+        }
     
 }
 
@@ -137,10 +140,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInputThree = document.getElementById('userInputThree')
 
 
+
+
+
     console.log(input)
-    console.log(userInput)
-    console.log(userInputTwo)
-    console.log(userInputThree)
+    //console.log(userInput)
+    //console.log(userInputTwo)
+    //console.log(userInputThree)
 
 
 
@@ -164,8 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
 
             userInput.innerText += button.innerText;
-            userInputTwo.innerText += button.innerText;
-            userInputThree.innerText += button.innerText;
+            
+  //          userInputTwo.innerText += button.innerText;
+//            userInputThree.innerText += button.innerText;
 
         });
 
@@ -181,11 +188,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             userInput.innerText += button.innerText;
-            userInputTwo.innerText += button.innerText;
-            userInputThree.innerText += button.innerText;
+            //userInputTwo.innerText += button.innerText;
+            //userInputThree.innerText += button.innerText;
             
         })
     })
+
+
 
 
 
@@ -206,6 +215,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.delete-button').addEventListener('click', () => {
             calculator.deleteInput(screenInput)
             calculator.updateInputDisplay(screenInput)
+        })
+
+        document.querySelector('.reload-button').addEventListener('click', () => {
+
+                location.reload()
+
         })
 
     })
