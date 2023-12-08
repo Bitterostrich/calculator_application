@@ -7,13 +7,43 @@
 }
 
 .calculator__body {
-    height: 32rem;
+    height: 37rem;
 }
 
 .left-buttons {
     border-radius: 42% 81% 10% 56% / 12% 62% 58% 53%;
+    padding: 0.85rem
 }
 
 .right-buttons {
-    border-radius: 97% 6% 68% 0% / 55% 75% 58% 41% 
+    border-radius: 97% 6% 68% 0% / 55% 75% 58% 41%;
+    padding: 0.85rem
+}
+
+.calculator__button_nav_wrapper {
+    background-color: red;
+}
+
+
+.calculator__button_small {
+    border-radius: 51% 50% 68% 68% / 33% 30% 68% 68% ;
+}
+
+.cursor, .cursor-two {
+    animation: blink 1s step-start infinite;
+    color: black;
+}
+
+
+
+.number-button {
+    color: pink!important;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@keyframes blink {
+    0%, 100% {opacity: 1}
+    50% {opacity: 0;}
 }
