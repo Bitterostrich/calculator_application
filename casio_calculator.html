@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio Calculator</title>
+    
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="casio_cal.css" rel="stylesheet">
+    <script defer src="calculator_script.js"></script>
+</head>
+<body class="m-0 p-0">
+    <section class="calculator_wrapper">
+        <div class="calculator_shape bg-yellow-50 flex ml-auto w-screen h-screen items-center max-w-md mr-auto py-8 px-10">
+            <div class="relative  inset-x-auto flex-1 justify-center">
+                <div class="calculator__body bg-gray- shadow-slate-950 shadow-md m-auto rounded-b-lg rounded-t-lg justify-center items-center">
+                    <header>
+                        <div class="px-5 pb-2 pt-3">
+                            <div class="flex flex-row justify-between">
+                                <h1>Casio</h1>
+                                <p>fx-83GT Plus</p>
+                            </div>
+                            <div class="p-1 flex justify-center">
+                                <h2>Natural-U.P.A.M</h2>
+                            </div>
+                            <div class="calculator__display_wrapper px-1 py-1">
+                                <div class="calculator__display">
+                                    
+                                </div>
+                                <div class="calculator__display-top bg-gray-400">
+                                    <div class="px-0.5">
+                                        <ol class="text-xs flex justify-between">
+                                            <li id="">S</li>
+                                            <li id="">A</li>
+                                            <li id="">M</li>
+                                            <li id="">STO</li>
+                                            <li id="">RCL</li>
+                                            <li id="">STAT</li>
+                                            <li id="">D</li>
+                                            <li id="">R</li>
+                                            <li id="">G</li>
+                                            <li id="">FIX</li>
+                                            <li id="">SCI</li>
+                                            <li id="">Math</li>
+                                            <div>
+                                                <ul class="flex">
+                                                    <li>
+                                                        ↑
+                                                    </li>
+                                                    <li>
+                                                        ↓ 
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <li id="">Disp</li>
+    
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                
+
+                                
+    
+                                <div id = "inputs" class="calculator__input_display flex h-14 px-0.5 bg-gray-400">
+                                    <span id="userInput" class="flex cursor items-baseline">|</span>
+                                    <span id="userInputTwo" class="flex cursor items-start justify-start"></span>
+                                    <span id="userInputThree" class="flex cursor-two invisible items-start justify-start">|</span>
+                                </div>
+    
+                                <div class="calculator__display_mid h-2 m-auto py-0.5 px-0.5 bg-gray-400"></div>
+                            
+                                <div class="calculator__output_display flex justify-end h-full m-auto py-0.5 px-0.5 min-h-[28px] bg-gray-400">
+                                    <span class="flex justify-end truncate"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </header>
+
+                    <main>
+                        <div class="calculator__buttons_top relative  px-5 py-0.5">
+                            
+                            <div class="calculator__buttons_top-inner grid grid-cols-5  m-auto  text-xs">
+                           
+                                <div class="flex flex-col items-center justify-between">
+                                    <span class="flex flex-col">
+                                        SHIFT
+                                        <button class="left-buttons rounded-full h-2 w-2 bg-purple-400 mx-auto"></button>
+                                    </span>
+                                </div>
+                              
+
+                                <div class="flex flex-col items-center justify-between">
+                                    <span class="flex flex-col">
+                                        ALPHA
+                                        <button class="left-buttons rounded-full bg-purple-400 mx-auto "></button>
+                                    </span>
+                                </div>
+                                
+                              
+
+                                <div class="calculator__button_arrows ">
+                                    <div class="calculator__button_arrows_wrapper m-5 flex flex-grow flex-1 justify-center items-center rounded-full shadow-black">
+                                        <button class="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-left-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path d="M17 6h-6a1 1 0 0 0 -.78 .375l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78 .375h6l.112 -.006a1 1 0 0 0 .669 -1.619l-3.501 -4.375l3.5 -4.375a1 1 0 0 0 -.78 -1.625z" stroke-width="0" fill="currentColor" />
+                                              </svg>
+                                        </button>
+
+                                        <div class="calculator__vertical-arrows flex-col flex justify-center items-center mx-1 ">
+                                            <div class="">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M11.375 6.22l-5 4a1 1 0 0 0 -.375 .78v6l.006 .112a1 1 0 0 0 1.619 .669l4.375 -3.501l4.375 3.5a1 1 0 0 0 1.625 -.78v-6a1 1 0 0 0 -.375 -.78l-5 -4a1 1 0 0 0 -1.25 0z" stroke-width="0" fill="currentColor" />
+                                                  </svg>
+                                                  </button>
+                                            </div>
+
+
+                                              <div class="">
+                                                <span>REPLAY</span>
+                                              </div>
+                                              <div class="">
+                                                <button><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-down-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M16.375 6.22l-4.375 3.498l-4.375 -3.5a1 1 0 0 0 -1.625 .782v6a1 1 0 0 0 .375 .78l5 4a1 1 0 0 0 1.25 0l5 -4a1 1 0 0 0 .375 -.78v-6a1 1 0 0 0 -1.625 -.78z" stroke-width="0" fill="currentColor" />
+                                                  </svg>
+                                                  
+                                                  </button>
+                                              </div>
+
+
+                                        </div>
+                                        <div class="">
+                                            <button class="">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                                                  </svg>
+                                            </button>
+                                        </div>
+
+ 
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col items-center justify-between h-16">
+                                    <span class="flex flex-col truncate">
+                                       MODE SETUP
+                                        <button class="right-buttons rounded-full bg-purple-400 p-5 mx-auto "></button>
+                                    </span>
+                                </div>
+                                
+                             
+
+                                <div class="flex flex-col items-center justify-between h-16">
+                                    <span class="flex flex-col">
+                                        ON
+                                        <button class="right-buttons rounded-full bg-purple-400 mx-auto p-5"></button>
+                                    </span>
+                                </div>
+                              
+
+                            </div>
+                        </div>
+                        <div class="smaller-buttons_wrapper flex justify-center flex-col">
+                            <div class="calculator_buttons relative px-5 py-0.5">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-5  m-autp text-xs">
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                Abs
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                x3
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                x-1
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                log.H
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                            <div class="calculator_buttons relative px-5 pt-1 pb-0.5">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-6  m-autp text-xs">
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                d/d
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                root
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                x2
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                x-[]
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                log
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                ln
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                            <div class="calculator_buttons relative px-5 pt-1 pb-0.5">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-6  m-autp text-xs">
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                (-)
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                ""
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                hyp
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                sin
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                cos
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                tan
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                            <div class="calculator_buttons relative px-5 pt-1 pb-0.5">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-6  m-autp text-xs">
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                RCL
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                ENG
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                (
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                )
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                S-D
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-9 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                M+
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="larger__buttons_wrapper">
+                            <div class="calculator_buttons relative px-5 pt-3">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-5  m-autp text-xs">
+    
+                                    <div class="number-button cursor-pointer flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                7
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="number-button cursor-pointer flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                8
+                                            </button>
+                                        </span>
+                                    </div>
+
+                                    <div class="number-button flex flex-col items-center calculator__button_small w-11 mx-auto bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                9
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small text-black mx-auto w-11 bg-orange-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 delete-button">
+                                                DEL
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small text-black mx-auto w-11 bg-orange-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 all-clear-button">
+                                                AC
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                            <div class="calculator_buttons relative px-5 pt-3">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-5  m-autp text-xs">
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 number-button">
+                                                4
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 number-button">
+                                                5
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small w-11 mx-auto bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 number-button">
+                                                6
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 operation-button">
+                                                x
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 operation-button">
+                                                ÷
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                            <div class="calculator_buttons relative px-5 pt-3">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-5  m-autp text-xs">
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 w-full h-full items-center justify-center number-button">
+                                                1
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 number-button">
+                                                2
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small w-11 mx-auto bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 number-button">
+                                                3
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 operation-button">
+                                                +
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 operation-button">
+                                                -
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                            <div class="calculator_buttons relative px-5 pt-3">
+                                <div class="calculator__buttons_inner h-auto text-white grid grid-cols-5  m-autp text-xs">
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-between">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 number-button">
+                                                0
+                                            </button>
+                                        </span>
+                                    </div>
+    
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 number-button">
+                                                .
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small w-11 mx-auto bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1">
+                                                x10^x
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 answer-button">
+                                                Ans
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
+                                        <span class="ml-auto mr-auto flex items-center">
+                                            <button class="p-1 equals-button">
+                                                =
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </div>
+    
+                            </div>
+                            
+                        </div>
+
+                    </main>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
