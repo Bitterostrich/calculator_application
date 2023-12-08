@@ -59,8 +59,8 @@ class Calculator {
         if (this.previousValue !== '') {
             this.compute()
         }
-
-        this.operation = operation; 
+        
+        this.operation = operation;
         this.previousValue = this.currentValue;
         this.currentValue = '';
     }
