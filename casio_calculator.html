@@ -59,15 +59,21 @@
                                         </ol>
                                     </div>
                                 </div>
+
+                                
+
+                                
     
-                                <div class="calculator__input_display h-14 px-0.5 bg-gray-400">
-                                    <span class="flex flex-1 items-baseline">| or input section</span>
+                                <div id = "inputs" class="calculator__input_display flex h-14 px-0.5 bg-gray-400">
+                                    <span id="userInput" class="flex cursor items-baseline">|</span>
+                                    <span id="userInputTwo" class="flex cursor items-start justify-start"></span>
+                                    <span id="userInputThree" class="flex cursor-two invisible items-start justify-start">|</span>
                                 </div>
     
                                 <div class="calculator__display_mid h-2 m-auto py-0.5 px-0.5 bg-gray-400"></div>
                             
                                 <div class="calculator__output_display flex justify-end h-full m-auto py-0.5 px-0.5 min-h-[28px] bg-gray-400">
-                                    <span class="flex justify-end truncate">Output section</span>
+                                    <span class="flex justify-end truncate"></span>
                                 </div>
                             </div>
 
@@ -383,14 +389,14 @@
                                     </div>
                                     <div class="flex flex-col items-center calculator__button_small text-black mx-auto w-11 bg-orange-500 justify-center">
                                         <span class="ml-auto mr-auto flex items-center">
-                                            <button class="p-1">
+                                            <button class="p-1 delete-button">
                                                 DEL
                                             </button>
                                         </span>
                                     </div>
                                     <div class="flex flex-col items-center calculator__button_small text-black mx-auto w-11 bg-orange-500 justify-center">
                                         <span class="ml-auto mr-auto flex items-center">
-                                            <button class="p-1">
+                                            <button class="p-1 all-clear-button">
                                                 AC
                                             </button>
                                         </span>
@@ -401,9 +407,9 @@
                             <div class="calculator_buttons relative px-5 pt-3">
                                 <div class="calculator__buttons_inner h-auto text-white grid grid-cols-5  m-autp text-xs">
     
-                                    <div class="number-button flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-between">
+                                    <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-between">
                                         <span class="ml-auto mr-auto flex items-center">
-                                            <button class="p-1">
+                                            <button class="p-1 number-button">
                                                 4
                                             </button>
                                         </span>
@@ -426,14 +432,14 @@
                                     <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
                                         <span class="ml-auto mr-auto flex items-center">
                                             <button class="p-1 operation-button">
-                                                X
+                                                x
                                             </button>
                                         </span>
                                     </div>
                                     <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
                                         <span class="ml-auto mr-auto flex items-center">
                                             <button class="p-1 operation-button">
-                                                /
+                                                ÷
                                             </button>
                                         </span>
                                     </div>
@@ -467,7 +473,7 @@
                                     </div>
                                     <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
                                         <span class="ml-auto mr-auto flex items-center">
-                                            <button class="p-1 addition-button">
+                                            <button class="p-1 operation-button">
                                                 +
                                             </button>
                                         </span>
@@ -495,7 +501,7 @@
     
                                     <div class="flex flex-col items-center calculator__button_small mx-auto w-11 bg-gray-500 justify-center">
                                         <span class="ml-auto mr-auto flex items-center">
-                                            <button class="p-1 ">
+                                            <button class="p-1 number-button">
                                                 .
                                             </button>
                                         </span>

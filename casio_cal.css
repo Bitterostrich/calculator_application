@@ -24,11 +24,27 @@
     background-color: red;
 }
 
-.calculator__buttons_top-inner span {
-
-
-}
 
 .calculator__button_small {
     border-radius: 51% 50% 68% 68% / 33% 30% 68% 68% ;
+}
+
+.cursor, .cursor-two {
+    animation: blink 1s step-start infinite;
+    color: black;
+}
+
+
+/*
+.number-button {
+    color: pink!important;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+*/
+
+@keyframes blink {
+    0%, 100% {opacity: 1}
+    50% {opacity: 0;}
 }
