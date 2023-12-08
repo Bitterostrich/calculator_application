@@ -10,18 +10,18 @@
     <script defer src="calculator_script.js"></script>
 </head>
 <body class="m-0 p-0">
-    <section class="calculator_wrapper">
-        <div class="calculator_shape bg-yellow-50 flex ml-auto w-screen h-screen items-center max-w-md mr-auto py-8 px-10">
+    <section class="calculator_wrapper bg-white ">
+        <div class="calculator_shape flex ml-auto w-screen h-screen items-center max-w-md mr-auto py-8 px-10">
             <div class="relative  inset-x-auto flex-1 justify-center">
-                <div class="calculator__body bg-gray- shadow-slate-950 shadow-md m-auto rounded-b-lg rounded-t-lg justify-center items-center">
+                <div class="calculator__body bg-gray-800 shadow-slate-950 shadow-md m-auto rounded-b-lg rounded-t-lg justify-center items-center">
                     <header>
                         <div class="px-5 pb-2 pt-3">
                             <div class="flex flex-row justify-between">
-                                <h1>Casio</h1>
-                                <p>fx-83GT Plus</p>
+                                <h1 class="font-extrabold text-md text-white uppercase">Casio</h1>
+                                <p class="italic text-white font-medium" >fx-83GT Plus</p>
                             </div>
                             <div class="p-1 flex justify-center">
-                                <h2>Natural-U.P.A.M</h2>
+                                <h2 class="italic text-red-600 font-bold">Natural-U.P.A.M.</h2>
                             </div>
                             <div class="calculator__display_wrapper px-1 py-1">
                                 <div class="calculator__display">
@@ -86,15 +86,15 @@
                             <div class="calculator__buttons_top-inner grid grid-cols-5  m-auto  text-xs">
                            
                                 <div class="flex flex-col items-center justify-between">
-                                    <span class="flex flex-col">
+                                    <span class="flex flex-col font-semibold text-yellow-100">
                                         SHIFT
-                                        <button class="left-buttons rounded-full h-2 w-2 bg-purple-400 mx-auto"></button>
+                                        <button class="left-buttons rounded-full h-2 w-2 bg-blue-800 mx-auto"></button>
                                     </span>
                                 </div>
                               
 
                                 <div class="flex flex-col items-center justify-between">
-                                    <span class="flex flex-col">
+                                    <span class="flex flex-col text-red-600">
                                         ALPHA
                                         <button class="left-buttons rounded-full bg-purple-400 mx-auto "></button>
                                     </span>
@@ -104,7 +104,7 @@
 
                                 <div class="calculator__button_arrows ">
                                     <div class="calculator__button_arrows_wrapper m-5 flex flex-grow flex-1 justify-center items-center rounded-full shadow-black">
-                                        <button class="">
+                                        <button class="text-white">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-left-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                 <path d="M17 6h-6a1 1 0 0 0 -.78 .375l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78 .375h6l.112 -.006a1 1 0 0 0 .669 -1.619l-3.501 -4.375l3.5 -4.375a1 1 0 0 0 -.78 -1.625z" stroke-width="0" fill="currentColor" />
@@ -112,7 +112,7 @@
                                         </button>
 
                                         <div class="calculator__vertical-arrows flex-col flex justify-center items-center mx-1 ">
-                                            <div class="">
+                                            <div class="text-white">
                                                 <button>
                                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -123,10 +123,10 @@
 
 
                                               <div class="">
-                                                <span>REPLAY</span>
+                                                <span class="text-white font-bold text-sm ">REPLAY</span>
                                               </div>
                                               <div class="">
-                                                <button><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-down-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <button class="text-white"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-down-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                     <path d="M16.375 6.22l-4.375 3.498l-4.375 -3.5a1 1 0 0 0 -1.625 .782v6a1 1 0 0 0 .375 .78l5 4a1 1 0 0 0 1.25 0l5 -4a1 1 0 0 0 .375 -.78v-6a1 1 0 0 0 -1.625 -.78z" stroke-width="0" fill="currentColor" />
                                                   </svg>
@@ -137,7 +137,7 @@
 
                                         </div>
                                         <div class="">
-                                            <button class="">
+                                            <button class="text-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                     <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
