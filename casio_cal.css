@@ -35,11 +35,17 @@
 }
 
 
+.text-xxs {
+    font-size: 0.55rem;
+}
+
 
 .number-button {
-    color: pink!important;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white!important;
+    box-shadow: none!important;
+    font-weight: 600!important;
+    
 }
 
 
